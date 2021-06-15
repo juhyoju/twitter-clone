@@ -57,7 +57,6 @@ const Nweet = ({ nweetObj, isOwner }) => {
                         )}
                     </>
                 )
-                
             }
         </div>
     );
