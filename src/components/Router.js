@@ -13,14 +13,14 @@ import Navigation from "components/Navigation";
             {isLoggedIn && <Navigation userObj={userObj} />}
             <Switch>
                 {isLoggedIn ? (
-                <>
+                <div className="containerRouter">
                     <Route exact path="/">
                         <Home userObj={userObj} />
                     </Route>
                     <Route exact path="/profile">
                         <Profile userObj={userObj} refreshUser={refreshUser} />
                     </Route>
-                </>
+                </div>
             ) : (
                 <>
                     <Router exact path="/">
